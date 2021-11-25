@@ -36,7 +36,7 @@ NAVBAR
 JUMBOTRON
 -----------------------------------------------------------------------------*/
 .big-bg {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url("../img/shubham-dhage-1lIuoFKf3G0-unsplash.jpg") center;
   background-size: cover;
@@ -177,7 +177,6 @@ HERO SECTIONS
   color: var(--theme-bg);
 }
 
-
 /*-----------------------------------------------------------------------------
 FOOTER
 -----------------------------------------------------------------------------*/
@@ -198,9 +197,6 @@ MEDIA QUERIES FOR DESKTOP
     }
 	.inspirational-quote h3 {
 		font-size: 2em;
-	}
-	.mobile-only {
-		display: none;
 	}
   .logo {
     width: 70px;
