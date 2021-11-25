@@ -1,0 +1,201 @@
+:root {
+  --theme-bg: #170b07ff;
+  --theme-primary: #e7b26aff;
+  --theme-secondary: #383433ff;
+}
+
+/*-----------------------------------------------------------------------------
+NAVBAR
+-----------------------------------------------------------------------------*/
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-dark {
+  --bs-bg-opacity: 0.6;
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: #000;
+	-webkit-text-stroke: 6px transparent;
+	background-image: radial-gradient(ellipse at 0 80%,#45d8b4,#0072da,#ee263e);
+	font-size: 2em;
+	margin-right: 0;
+}
+
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+/*-----------------------------------------------------------------------------
+HERO SECTION
+-----------------------------------------------------------------------------*/
+.big-bg {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/shubham-dhage-1lIuoFKf3G0-unsplash.jpg") center;
+  background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.inspirational-quote {
+	height: 40vh;
+	flex-direction: column;
+}
+
+.inspirational-quote h1 {
+	font-family: 'Lato', sans-serif;
+	color: var(--theme-primary);
+	text-shadow: var(--theme-bg) 3px 3px 6px;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.inspirational-quote h3 {
+	font-family: 'Lato', sans-serif;
+	color: var(--theme-primary);
+	text-shadow: var(--theme-bg) 3px 3px 6px;
+  font-weight: 400;
+	font-size: 1.5em;
+}
+
+/*-----------------------------------------------------------------------------
+ANIMATED DOWN ARROW
+-----------------------------------------------------------------------------*/
+.go-down a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.go-down a:hover {
+  opacity: .5;
+}
+
+#down-button a {
+  padding-top: 60px;
+}
+#down-button a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 2px solid var(--theme-primary);
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#down-button a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid var(--theme-primary);
+  border-bottom: 1px solid var(--theme-primary);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------------------
+TRAYN, ETC
+-----------------------------------------------------------------------------*/
+#pages {
+  color: #fff;
+  background-color: var(--theme-bg);
+}
+
+#pages h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.btn-lg {
+  background-color: var(--theme-secondary);
+  color: var(--theme-bg);
+}
+
+
+/*-----------------------------------------------------------------------------
+FOOTER
+-----------------------------------------------------------------------------*/
+footer {
+  padding: 0 30px;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+/*-----------------------------------------------------------------------------
+MEDIA QUERIES FOR DESKTOP
+-----------------------------------------------------------------------------*/
+@media screen and (min-width: 580px) {
+  .inspirational-quote h1 {
+    font-size: 4em;
+    }
+	.inspirational-quote h3 {
+		font-size: 2em;
+	}
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  .navbar-brand {
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+/*-----------------------------------------------------------------------------
+HEADING ANIMATION
+-----------------------------------------------------------------------------*/
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+
+.pop-1 {
+  animation-delay: 1s;
+}
+
+.pop-2 {
+  animation-delay: 2s;
+}
+
+.pop-3 {
+  animation-delay: 2.4s;
+	color: var(--theme-primary);
+}
