@@ -200,9 +200,9 @@ MEDIA QUERIES FOR DESKTOP
 	.inspirational-quote h3 {
 		font-size: 2em;
 	}
-	.mobile-only {
-		display: none;
-	}
+  .img-fluid {
+    width: 700px;
+  }
   .logo {
     width: 70px;
     height: 70px;
