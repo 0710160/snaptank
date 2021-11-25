@@ -177,6 +177,10 @@ HERO SECTIONS
   color: var(--theme-bg);
 }
 
+.img-fluid {
+  max-width: 100%!important;
+}
+
 
 /*-----------------------------------------------------------------------------
 FOOTER
