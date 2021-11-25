@@ -36,7 +36,7 @@ NAVBAR
 JUMBOTRON
 -----------------------------------------------------------------------------*/
 .big-bg {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url("../img/shubham-dhage-1lIuoFKf3G0-unsplash.jpg") center;
   background-size: cover;
@@ -156,7 +156,6 @@ ANIMATED DOWN ARROW
 HERO SECTIONS
 -----------------------------------------------------------------------------*/
 #pages {
-  width: 100vw;
 	font-family: 'Lato', sans-serif;
   color: #fff;
 }
@@ -200,9 +199,6 @@ MEDIA QUERIES FOR DESKTOP
 	.inspirational-quote h3 {
 		font-size: 2em;
 	}
-  .img-fluid {
-    width: 700px;
-  }
   .logo {
     width: 70px;
     height: 70px;
